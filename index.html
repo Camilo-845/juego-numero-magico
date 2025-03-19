@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <title>Juego del Número Mágico</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/seven-segment');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Número Mágico</h1>
+        <p>Intenta adivinar un número entre 1 y 100.</p>
+        <input type="number" id="guessInput" min="0" max="999" placeholder="Ingresa tu número" maxlength="3" value="000">
+        <button id="submitGuess">Enviar</button>
+        <div id="feedback"></div>
+        <div id="attempts"></div>
+        <button id="restartButton" style="display: none;">Reiniciar Juego</button>
+        
+        <!-- Nueva sección para los corazones -->
+        <div id="hearts" class="hearts-container"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
