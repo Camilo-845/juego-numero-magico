@@ -152,7 +152,8 @@ h1 {
     margin: 0; /* Eliminar márgenes si es necesario */
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red); /* Gradiente de arcoíris */
     background-size: 200% 100%; /* Aumentar el tamaño del fondo para el movimiento */
-    -webkit-background-clip: text; /* Clipping del fondo para que se aplique al texto */
+    background-clip: text; /* Clipping del fondo para que se aplique al texto */
+    -webkit-background-clip: text; /* Clipping del fondo para compatibilidad con WebKit */
     -webkit-text-fill-color: transparent; /* Hacer que el color del texto sea transparente */
     animation: rainbow 5s linear infinite; /* Aplicar la animación de movimiento del gradiente */
 }
